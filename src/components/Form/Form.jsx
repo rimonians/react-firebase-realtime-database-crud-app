@@ -3,7 +3,7 @@ import classes from "./Form.module.css";
 
 const Form = ({ title, type, data, handleChange, handleSubmit }) => {
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={classes.form} onSubmit={handleSubmit}>
       <h3>{title}</h3>
       <label htmlFor="username">Enter username</label>
       <input
