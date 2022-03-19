@@ -32,7 +32,7 @@ const Update = () => {
     return () => {
       setCredential(initialState);
     };
-  }, []);
+  }, [id]);
 
   const handleChange = (e) => {
     setCredential({ ...credential, [e.target.name]: e.target.value });
